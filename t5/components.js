@@ -79,9 +79,9 @@ export const getRestaurants = async () => {
 const getDailyMenu = async (id, lang) => {
   try {
     return await fetchData(`${apiUrl}/restaurants/daily/${id}/${lang}`);
-  } catch (error) {
-    console.error(error);
-  }
+  } catch (error) {}
+
+  huhhei;
 };
 
 // "ongelmallinen" destrukturointi, selvitä mitä {name: bName} tekee
